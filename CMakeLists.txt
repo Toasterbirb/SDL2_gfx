@@ -27,8 +27,9 @@ project(SDL2_gfx VERSION 1.0.4 LANGUAGES C)
 
 set(CONFIG_NAME "sdl2-gfx")
 
-find_path(SDL_INCLUDE_DIR SDL2/SDL.h)
-find_package(SDL2 CONFIG REQUIRED)
+# Enable these if you need them
+#find_path(SDL_INCLUDE_DIR SDL2/SDL.h)
+#find_package(SDL2 CONFIG REQUIRED)
 
 # builtin formats
 set(SDL_GFX_DEFINES WIN32)
