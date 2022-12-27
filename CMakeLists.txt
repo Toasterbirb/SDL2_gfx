@@ -61,11 +61,11 @@ install(TARGETS ${PROJECT_NAME}
     ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib)
 
-install(EXPORT ${PROJECT_NAME}
-    FILE ${CONFIG_NAME}-targets.cmake
-    NAMESPACE SDL2::
-    DESTINATION share/${CONFIG_NAME}/
-)
+#install(EXPORT ${PROJECT_NAME}
+#    FILE ${CONFIG_NAME}-targets.cmake
+#    NAMESPACE SDL2::
+#    DESTINATION share/${CONFIG_NAME}/
+#)
 file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/${CONFIG_NAME}-config.cmake
 "include(CMakeFindDependencyMacro)
 find_dependency(SDL2 CONFIG)
